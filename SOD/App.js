@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>APP EM CONSTRUÇÃO</Text>
+      <Text>APP EM CONSTRUÇÃO POREM COM BRANCH</Text>
       <StatusBar style="auto" />
     </View>
   );
