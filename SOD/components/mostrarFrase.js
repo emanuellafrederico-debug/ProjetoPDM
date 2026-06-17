@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
-import api from '../services/api'; // Ajuste o caminho conforme sua estrutura
+import api from '../services/api';
 
 export default function MostrarFrase({ idFrase }) {
   const [frase, setFrase] = useState(null);
   const [carregando, setCarregando] = useState(false);
   const [erro, setErro] = useState(null);
 
-  // Função interna que faz a requisição usando o ID recebido por prop
+  // ID recebido por prop
   async function carregarDados() {
     if (!idFrase) return; // Segurança caso não passe ID
     
